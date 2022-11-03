@@ -1,11 +1,11 @@
--link# Тестовое задание
+### Тестовое задание
 
 
 Telegram-bot на асинхронной библиотеке aiogram. 
 
 Служит для сбора информации от пользователя и дальшейшего заполнения формы обратной связи на сайте.
 
-## How to Start
+## Как установить бота
 
 Данный бот был размещен на типовом VPS сервере (vdsina). Сервер на ubuntu 20.04.
 
@@ -46,9 +46,7 @@ $ source /home/someuser/testbot/.venv/bin/activate
 $ pip install -r /home/someuser/testbot/pip-requirements.txt
 ```
 
-Использовать конфиг для автоматического запуска "tgbot.service"
-
-Мы копируем конфиг из кореквой директории проекта и перемещаеи ее в нужную папку (из-под root)
+Использовать конфиг для автоматического запуска "tgbot.service". Мы копируем конфиг из кореквой директории проекта и перемещаеи ее в нужную папку (из-под root)
 
 ```
 $ sudo cp /home/someuser/testbot/tgbot3.service /etc/systemd/system/tgbot3.service
@@ -59,11 +57,19 @@ $ sudo systemctl start tgbot3
 $ sudo systemctl stop tgbot3
 $ sudo systemctl status tgbot3
 ```
+
 ## Установка postgres
-
-
+```
+sudo apt -y install postgresql
+```
 ## Установка хром
 
+Телеграм-бот отправлякт форму на сайте с помощью пакета selenium, которому необходимо установить релевантный браузер.
+
+```
+$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+$ sudo dpkg -i google-chrome-stable_current_i386.deb
+```
 ### Примечание
 
 Не подойдет самая слабая конфигурация сервера (1 ядро, 1гб ОЗУ), так как хром берет на себя достаточное количество ресурсов, чтобы выскочила ошибка: Out of memory: killed procecc ... .

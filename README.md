@@ -1,12 +1,9 @@
-# Pet Finder
+# Тестовое задание
 
-Все любят котиков!
 
-Если ты можешь помочь, ты должен помочь!
+Telegram-bot на асинхронной библиотеке aiogram. 
 
-Pet project with Flutter + Firebase + Hasura.
-
-![alt text](assets/head.png)
+Служит для сбора информации от пользователя для дальшейшего заполнения формы обратной связи на сайте
 
 ## How to Start
 

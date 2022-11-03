@@ -1,5 +1,4 @@
-### Тестовое задание
-
+# Тестовое задание
 
 Telegram-bot на асинхронной библиотеке aiogram. 
 
@@ -78,11 +77,7 @@ $ sudo dpkg -i google-chrome-stable_current_i386.deb
 
 ## Contacts
 
-- E-Mail: [forwotk31415@gmail.com](mailto:andrew.kachanov@gmail.com)
+- E-Mail: forwotk31415@gmail.com
 - Telegram: [@lipp260](https://t.me/lipp260)
 
-  
-  ```
-$ flutter packages pub run build_runner build --delete-conflicting-outputs
-$ cd data && docker-compose up -d
-```
+ 

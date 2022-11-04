@@ -15,7 +15,7 @@ responsible for cyclic connection to the site (every 10 minutes). Made using the
 aioschedule library, and the selenium automation tool is passed to this function.
 """
 async def scheduler():
-    aioschedule.every(10).seconds.do(fill_form_on_site)
+    aioschedule.every(600).seconds.do(fill_form_on_site)
     while True:
         await aioschedule.run_pending()
         await asyncio.sleep(1)

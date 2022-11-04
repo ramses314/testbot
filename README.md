@@ -64,14 +64,14 @@ $ sudo systemctl status tgbot3
 ```
 sudo apt -y install postgresql
 ```
-Далее ваи нужно зайти в БД postgres под юзером postgres (они создаются автоматически при установке), и установить пароль для БД
+Далее вам нужно зайти в БД postgres под юзером postgres (они создаются автоматически при установке), и установить пароль для БД
 
 Примечание, если вы установите пароль отличный от того что представлен ниже, то не забудьте указать его в файе data/config.py
-'''
+```
 $ sudo -u postgres psql postgres
 
 $ ALTER USER postgres WITH PASSWORD 'gtx97';
-'''
+```
 
 ## Установка хром
 

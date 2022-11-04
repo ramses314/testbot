@@ -1,0 +1,7 @@
+psycopg2-binary==2.9.5
+environs==9.5.0
+aiogram==2.22.2
+xvfbwrapper==0.2.9
+transliterate==1.10.2
+selenium==4.5.0
+aioschedule==0.5.2
